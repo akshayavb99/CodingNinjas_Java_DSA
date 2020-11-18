@@ -31,7 +31,7 @@ T
 
 import java.util.*;
 import java.io.*;
-public class Solution {
+public class AverageMarks {
 
 
 	public static void main(String[] args) {
@@ -52,7 +52,7 @@ public class Solution {
         int avg = (m1+m2+m3)/3;
         System.out.println(name);
         System.out.println(avg);
-        
+        scan.close();
 	}
 
 }
