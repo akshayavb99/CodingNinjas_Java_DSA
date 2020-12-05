@@ -57,7 +57,7 @@ public class MergeSortedArrays {
 				j++;
 			}
             
-            else if (j>=arr2.length) // For step 2 &amp; 4
+            else if (j>=arr2.length) // For step 2,4
 			{
 				arr3[k]=arr1[i];
 				i++;
