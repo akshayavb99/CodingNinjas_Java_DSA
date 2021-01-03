@@ -5,3 +5,4 @@
 4. https://www.youtube.com/watch?v=FNeL18KsWPc&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=6
 5. https://www.youtube.com/watch?v=jDM6_TnYIqE
 6. https://brilliant.org/discussions/thread/avl-trees-meet-fibonacci-numbers/
+7. http://people.csail.mit.edu/alinush/6.006-spring-2014/avl-height-proof.pdf
