@@ -6,3 +6,4 @@
 5. https://www.youtube.com/watch?v=jDM6_TnYIqE
 6. https://brilliant.org/discussions/thread/avl-trees-meet-fibonacci-numbers/
 7. http://people.csail.mit.edu/alinush/6.006-spring-2014/avl-height-proof.pdf
+8. https://courses.cs.washington.edu/courses/cse373/19su/files/lectures/slides/lecture09.pdf
