@@ -7,3 +7,4 @@
 6. https://brilliant.org/discussions/thread/avl-trees-meet-fibonacci-numbers/
 7. http://people.csail.mit.edu/alinush/6.006-spring-2014/avl-height-proof.pdf
 8. https://courses.cs.washington.edu/courses/cse373/19su/files/lectures/slides/lecture09.pdf
+9. https://courses.csail.mit.edu/6.006/fall09/lecture_notes/lecture04.pdf
