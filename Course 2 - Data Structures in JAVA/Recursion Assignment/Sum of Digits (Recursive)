@@ -21,3 +21,15 @@ Sample Output 2 :
 9
 */
 
+public class solution {
+
+	public static int sumOfDigits(int input){
+		// Write your code here
+		if (input==0)
+        {
+            return 0;
+        }
+        int smallOutput=sumOfDigits(input/10);
+        return (input%10)+smallOutput;
+	}
+}
