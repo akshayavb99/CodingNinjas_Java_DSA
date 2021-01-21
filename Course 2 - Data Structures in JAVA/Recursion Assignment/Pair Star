@@ -21,3 +21,26 @@ aaaa
 Sample Output 2 :
 a*a*a*a
 */
+
+public class solution {
+
+	// Return the updated string
+	public static String addStars(String s) {
+		// Write your code here
+        if (s.length()==1)
+        {
+            return s;
+        }
+        if (s.charAt(0)==s.charAt(1))
+        {
+            String smallOutput=addStars(s.substring(1));
+            return s.charAt(0)+"*"+smallOutput;
+        }
+        else
+        {
+            String smallOutput=addStars(s.substring(1));
+            return s.charAt(0)+smallOutput;
+        }
+
+	}
+}
