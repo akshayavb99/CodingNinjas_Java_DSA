@@ -32,3 +32,27 @@ Sample Output 2 Explanation :
 Price of your app should be Rs. 67. You can get the profit Rs. 201 (i.e. 3 * 67).
 */
 
+import java.util.*;
+import java.lang.*;
+public class solution {
+
+    public static int maximumProfit(int budget[]) {
+	    
+        Arrays.sort(budget);
+        /*for (int i=0;i<budget.length;i++)
+        {
+            System.out.print(budget[i]+" ");
+        }*/
+        //System.out.println();
+        
+        int ans=Integer.MIN_VALUE;
+        int n=budget.length;
+        // sort(budget,budget+n);
+    	for(int i=0;i<n;i++)
+    	{
+        	ans=Math.max(ans,budget[i]*(n-i));
+    	}
+    	return ans;
+        
+	}
+}
