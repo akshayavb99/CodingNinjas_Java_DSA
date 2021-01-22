@@ -52,7 +52,7 @@ Sample Output 2 :
 
 */
 
-public class PrintIthNode {
+public class Solution {
 
 	public static void printIthNode(LinkedListNode<Integer> head, int i){
 		//Your code goes here
