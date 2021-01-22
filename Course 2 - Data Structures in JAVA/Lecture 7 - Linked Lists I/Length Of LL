@@ -45,7 +45,7 @@ Sample Output 2 :
 */
 
 
-public class LengthOfLL {
+public class Solution {
 
 	public static int length(LinkedListNode<Integer> head){
 		//Your code goes here
