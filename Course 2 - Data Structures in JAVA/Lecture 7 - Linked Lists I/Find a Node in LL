@@ -38,3 +38,39 @@ Sample Output 2 :
 Explanation for Sample Input 2 :
 For the given singly linked list, considering the indices starting from 0, progressing in a left to right manner with a jump of 1, then the N = 6 appears at position 4.
 */
+/*
+
+	Following is the Node class already written for the Linked List
+
+	class LinkedListNode<T> {
+    	T data;
+    	LinkedListNode<T> next;
+    
+    	public LinkedListNode(T data) {
+        	this.data = data;
+    	}
+	}
+
+*/
+
+public class Solution {
+
+	public static int findNode(LinkedListNode<Integer> head, int n) {
+		//Your code goes here
+        LinkedListNode<Integer> node = head;
+        int count=0;
+        while (node!=null)
+        {
+            if (node.data==n)
+            {
+                return count;
+            }
+            else
+            {
+                node=node.next;
+                count++;
+            }
+        }
+        return -1;
+	}
+}
