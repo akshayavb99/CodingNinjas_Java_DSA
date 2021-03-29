@@ -1,0 +1,75 @@
+/*
+Given an integer array (of length n), find and return all the subsets of input array.
+Subsets are of length varying from 0 to n, that contain elements of the array. But the order of elements should remain same as in the input array.
+Note : The order of subsets are not important.
+Input format :
+Line 1 : Size of array
+Line 2 : Array elements (separated by space)
+
+Sample Input:
+3
+15 20 12
+Sample Output:
+[] (this just represents an empty array, don't worry about the square brackets)
+12 
+20 
+20 12 
+15 
+15 12 
+15 20 
+15 20 12 
+*/
+
+public class solution {
+
+	// Return a 2D array that contains all the subsets
+	public static int[][] subsets(int input[]) {
+		// Write your code here
+		return subsetsHelper(input,0);
+	}
+    
+    private static int[][] subsetsHelper(int[] input, int startIndex)
+    {
+        if (startIndex==input.length)
+        {
+            return new int[1][0];
+        }
+        int[][] temp = subsetsHelper(input, startIndex+1);
+        //System.out.println("Length of 2D matrix: "+temp.length);
+        int[][] smallOutput = new int[temp.length*2][];
+        
+        for (int i=0;i<temp.length;i++)
+        {
+            smallOutput[i] = new int[temp[i].length];
+            int[] smallTemp = temp[i];
+            for (int j=0;j<temp[i].length;j++)
+            {
+                smallOutput[i][j]=smallTemp[j];
+            }
+        }
+        
+        for (int i=0;i<temp.length;i++)
+        {
+            smallOutput[i+temp.length] = new int[temp[i].length+1];
+            smallOutput[i+temp.length][0]=input[startIndex];
+            int[] smallTemp = temp[i];
+            for (int j=1;j<=temp[i].length;j++)
+            {
+                smallOutput[i+temp.length][j]=smallTemp[j-1];
+            }
+        }
+        /*
+        for (int i=0;i<smallOutput.length;i++)
+        {
+            int[] temp1 = smallOutput[i];
+            for (int j=0;j<temp1.length;j++)
+            {
+                System.out.print(temp1[j]+" ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+        */
+        return smallOutput;
+    }
+}
