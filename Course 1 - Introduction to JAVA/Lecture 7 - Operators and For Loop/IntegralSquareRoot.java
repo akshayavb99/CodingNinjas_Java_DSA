@@ -23,28 +23,29 @@ Sample Output 2 :
 */
 
 import java.util.*;
-public class IntegralSquareRoot {
+public class Main{
 	
 	public static void main(String[] args) {
 		// Write your code here
         Scanner scan = new Scanner(System.in);
         int N=scan.nextInt();
+        
         if (N==0)
         {
          	System.out.println("0");   
-        }
-        else
-        {
-            double num;
-			double half = (double)N/2;
-			do {
-				num = half;
-				half = (num+(N / num)) / 2;
-				} while ((num - half) != 0);
-		
-        	System.out.println((int)half);
+            return;
         }
         
+        int i = 0;
+        int sqr = i*i;
+        
+        while (sqr <= N)
+        {
+            i++;
+            sqr = i*i;
+        }
+        
+        System.out.println(i-1);
 
 	}
 }
