@@ -44,7 +44,7 @@ But we'll only print 48 because we are only interested in the integral part of t
 */
 
 import java.util.*;
-public TempConvTable {
+public class TempConvTable {
 	public static void printFahrenheitTable(int start, int end, int step) {
 		/* Don't write main(). 
 		 * Don't read input, it is passed as function argument. 
