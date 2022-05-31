@@ -37,26 +37,16 @@ Sample Output 2:
 
 import java.util.*;
 
-public class InvertedTriangleNum {
+public class Solution {
 	public static void main(String[] args) {
 	Scanner scan = new Scanner(System.in);
     int N=scan.nextInt();
-    for (int i=0;i<N;i++)
-    {
-        int val=1;
-        for (int j=0;j<(N-i-1);j++)
-        {
-            System.out.print(" ");
+    for(int i=N; i>0; i--){
+        for(int j=0; j<i; j++){
+            System.out.print(i);
         }
-        
-        for (int j=0;j<=i;j++)
-        {
-            System.out.print(val);
-            val++;
-        }
-        System.out.println(" ");
+        System.out.println();
     }
-    scan.close();
 		
 	}
 
